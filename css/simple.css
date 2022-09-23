@@ -1,58 +1,58 @@
-/* Set the background color of body to tan */
-body {
-    background-color: tan;
+.col1,
+.col2,
+.col3,
+.col4 {
+    margin: 1px;
+    float: left;
 }
 
-/* On screens that are 500px or less, set the background color to blue */
 @media screen and (min-width: 500px) {
-    body {
-        background-color: rgb(2, 2, 136);
-        font-size: small;
-        color: rgb(255, 211, 211)
+
+    .col1,
+    .col2,
+    .col3,
+    .col4 {
+        width: 48%;
     }
+
 }
 
-/* On screens that are 1000px or less, set the background color to olive */
 @media screen and (min-width: 1000px) {
-    body {
-        background-color: rgb(75, 75, 0);
+
+    .col1,
+    .col2,
+    .col3,
+    .col4 {
+        width: 24%;
+    }
+}
+
+
+
+/* On screens that are 500px or more, set the background color to purple */
+@media screen and (min-width: 500px) {
+    .minerals {
+        background-color: rgb(142, 142, 233);
+    }
+}
+
+/* On screens that are 1000px or more, set the background color to yellow */
+@media screen and (min-width: 1000px) {
+    .minerals {
+        background-color: rgb(245, 245, 156);
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .vegetables {
+        font-size: small;
+        color: rgb(110, 22, 22)
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .vegetables {
         font-size: large;
-        color: rgb(208, 246, 255)
-    }
-}
-
-@media only screen and (min-width: 1000px) {
-
-    /* For desktop: */
-    .col-1 {
-        width: 25%;
-    }
-
-    .col-2 {
-        width: 50%;
-    }
-
-    .col-3 {
-        width: 75%;
-    }
-
-    .col-4 {
-        width: 100%;
-    }
-}
-
-@media only screen and (min-width: 500px) {
-
-    /* For mobile phones: */
-    [class*="col-"] {
-        width: 100%;
-    }
-}
-
-@media only screen and (min-width: 1000px) {
-
-    /* For mobile phones: */
-    [class*="col-"] {
-        width: 50%;
+        color: rgb(4, 81, 100)
     }
 }
